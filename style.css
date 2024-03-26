@@ -1,0 +1,107 @@
+body{
+    background-color: rgb(24, 24, 24);
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+#calculator{
+    display: flex;
+    flex-direction: column;
+    background-color: hsla(0, 0%, 25%, 0.575);
+    width: 350px;
+    height: fit-content;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+
+    -webkit-box-shadow: inset 0px 0px 50px -12px #000000; 
+    box-shadow: inset 0px 0px 50px -12px #000000;
+    box-shadow: 0px 0px 40px 5px #00000056;
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+button{
+    width: 80px;
+    font-family: Poppins;
+    height: 80px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 30%;
+    border: none;
+    background-color: #00000042;
+    color: rgba(255, 255, 255, 0.747);
+    box-shadow: inset 0px -1px 0px 1px #00000056;
+    transition: all, 100ms;
+}
+button:hover{
+    background-color: #00000086;
+    font-size: 35px;
+    box-shadow: inset 0px -2px 0px 2px #00000056;
+}
+button:active{
+    background-color: #00000086;
+    font-size: 30px;
+    -webkit-box-shadow: inset 0px 0px 15px 5px #0000007a; 
+    box-shadow: inset 0px -8px 15px 5px #00000056;
+}
+
+#opd{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 10px;
+}
+
+button.fn{
+    width: 170px;
+    border-radius: 40px;
+    font-size: 40px;
+}
+
+button.op{
+    border-radius: 50%;
+    background-color: #0000005b;
+    transition: all, 300ms;
+}
+button.op:hover{
+    background-color: #8d8d8d1c;
+}
+button.op:active{
+    background-color: #8d8d8d07;
+}
+
+
+#clear{
+    color: rgb(253, 85, 119);
+}
+#equals{
+    color: rgb(51, 204, 71);
+}
+
+#display{
+    width: calc(100% - 60px);
+    height: 100px;
+    border-radius: 40px 40px 25px 25px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: #00000056;
+    color: rgba(240, 248, 255, 0.836);
+    font-size: 60px;
+    padding: 30px;
+    text-align: end;
+    font-family: Poppins;
+    font-weight: 500;
+    -webkit-box-shadow: inset 0px -45px 50px 0px #000000; 
+    box-shadow: inset 0px -45px 50px 0px #0000002f, inset 0px 2px 0px 1px #00000038;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator.</title>
+</head>
+<body>
+    <div id="calculator">
+        <input id="display" class="disp">
+        <div id="keys">
+            <button onclick="showonDisplay('7')" style="border-top-left-radius: 50%;">7</button>
+            <button onclick="showonDisplay('8')">8</button>
+            <button onclick="showonDisplay('9')" style="border-top-right-radius: 50%;">9</button>
+            <button onclick="showonDisplay('*')" class="op">×</button>
+            <button onclick="showonDisplay('4')">4</button>
+            <button onclick="showonDisplay('5')">5</button>
+            <button onclick="showonDisplay('6')">6</button>
+            <button onclick="showonDisplay('/')" class="op">÷</button>
+            <button onclick="showonDisplay('1')">1</button>
+            <button onclick="showonDisplay('2')">2</button>
+            <button onclick="showonDisplay('3')">3</button>
+            <button onclick="showonDisplay('+')" class="op">+</button>
+            <button onclick="showonDisplay('00')" style="border-bottom-left-radius: 50%;">00</button>
+            <button onclick="showonDisplay('0')">0</button>
+            <button onclick="showonDisplay('.')"  style="border-bottom-right-radius: 50%;">.</button>
+            <button onclick="showonDisplay('-')" class="op">-</button>
+            
+            
+        </div>
+        <div id="opd">
+            <button onclick="clearDisplay()" class="fn" id="clear">C</button>
+            <button onclick="calculate()" class="fn" id="equals">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
